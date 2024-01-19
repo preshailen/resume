@@ -1,0 +1,6 @@
+.portfolio-text {
+  text-align: center;
+  h3 {
+    color: var(--color-secondary);
+  }
+}

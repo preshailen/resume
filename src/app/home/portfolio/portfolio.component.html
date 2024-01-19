@@ -1,0 +1,25 @@
+<div class="main-title">
+  <h2>My <span>Portfolio</span></h2>
+</div>
+<div class="portfolios">
+  <div class="portfolio-item" *ngFor="let portfolio of portfolios">
+    <div class="image">
+      <img src="../../../assets/{{ portfolio.imageUrl }}" alt="">
+    </div>
+    <div class="portfolio-text">
+      <h3>{{ portfolio.name }}</h3>
+      <p>{{ portfolio.description }}</p>
+      <div class="divider"></div>
+  </div>
+    <div class="hover-items">
+      <div class="icons">
+          <a *ngIf="portfolio.gitUrl" href="{{ portfolio.gitUrl }}" class="icon" target="_blank">
+              <i class="fab fa-github"></i>
+          </a>
+          <a *ngIf="portfolio.ytUrl" href="{{ portfolio.ytUrl }}" class="icon" target="_blank">
+              <i class="fab fa-youtube"></i>
+          </a>
+      </div>
+    </div>
+  </div>
+</div>
