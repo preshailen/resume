@@ -1,0 +1,22 @@
+<div class="main-title">
+  <h2>Other <span>Work</span></h2>
+</div>
+<div class="portfolios">
+  <div class="portfolio-item" *ngFor="let otherwork of otherworks">
+    <div class="image">
+      <img src="assets/{{ otherwork.imageUrl }}" alt="">
+    </div>
+    <div class="portfolio-text">
+      <h3>{{ otherwork.name }}</h3>
+      <p>{{ otherwork.description }}</p>
+      <div class="divider"></div>
+  </div>
+    <div class="hover-items">
+      <div class="icons">
+          <a *ngIf="otherwork.extUrl" href="{{ otherwork.extUrl }}" class="icon" target="_blank">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+      </div>
+    </div>
+  </div>
+</div>

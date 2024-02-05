@@ -3,14 +3,21 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.css']
+  styleUrls: ['./portfolio.component.css', '../../app.component.css']
 })
 export class PortfolioComponent {
   portfolios: Portfolio[] = [
     {
       name: 'E-Moderator',
       description: 'Tool built in Angular that allows teachers to electronically moderate tests',
-      imageUrl: 'port1.jpg',
+      imageUrl: 'emoderator.png',
+      gitUrl: 'https://github.com/preshailen/moderator',
+      ytUrl: 'https://youtu.be/q2l-ZrL8Ceg'
+    },
+    {
+      name: 'Recipe Book Frontend',
+      description: 'Tool built in Angular to manage',
+      imageUrl: 'port2.jpg',
       gitUrl: 'https://github.com/preshailen/moderator',
       ytUrl: 'https://youtu.be/q2l-ZrL8Ceg'
     }
