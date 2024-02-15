@@ -1,0 +1,16 @@
+<div class="main-title">
+  <h2>My <span>education</span></h2>
+</div>
+<div class="timeline">
+  <div class="timeline-item" *ngFor="let item of educationItems">
+      <div class="tl-icon">
+          <i class="fas fa-graduation-cap"></i>
+      </div>
+      <p class="tl-duration">{{ item.start }} - {{ item.end }}</p>
+      <h5>{{ item.name }}<span> - {{ item.school }}</span></h5>
+      <p>
+          {{ item.description }}
+          <button type="button" class="btn btn-qualification" (click)="open(item.qualificationUrl)">View Qualification <i class="fas fa-award"></i></button>
+      </p>
+  </div>
+</div>

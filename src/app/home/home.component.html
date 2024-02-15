@@ -23,9 +23,12 @@
 
   </header>
   <main>
-      <section class="container about" id="about">
-        <app-about></app-about>
-      </section>
+
+        <app-about class="container about" id="about"></app-about>
+
+
+        <app-education class="container education" id="education"></app-education>
+
       <section class="container" id="portfolio">
         <app-portfolio></app-portfolio>
       </section>
@@ -39,6 +42,9 @@
       </div>
       <div class="control" data-id="about" id="aboutControl" (click)="change('about')">
           <i class="fas fa-user"></i>
+      </div>
+      <div class="control" data-id="education" id="educationControl" (click)="change('education')">
+          <i class="fas fa-graduation-cap"></i>
       </div>
       <div class="control" data-id="portfolio" id="portfolioControl" (click)="change('portfolio')">
           <i class="fas fa-briefcase"></i>

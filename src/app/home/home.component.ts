@@ -10,7 +10,7 @@ export class HomeComponent {
 
   }
   download() {
-
+    console.log('here')
   }
   change(name: string) {
     document.querySelector(".active-btn")!.classList.remove("active-btn");
