@@ -9,7 +9,6 @@ import { PortfolioComponent } from './home/portfolio/portfolio.component';
 import { OtherComponent } from './home/other/other.component';
 import { EducationComponent } from './home/education/education.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { QualificationComponent } from './home/education/qualification/qualification.component';
 
 @NgModule({
   declarations: [
@@ -18,8 +17,7 @@ import { QualificationComponent } from './home/education/qualification/qualifica
     AboutComponent,
     PortfolioComponent,
     OtherComponent,
-    EducationComponent,
-    QualificationComponent
+    EducationComponent
   ],
   imports: [
     BrowserModule,

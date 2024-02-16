@@ -10,7 +10,13 @@
       <h5>{{ item.name }}<span> - {{ item.school }}</span></h5>
       <p>
           {{ item.description }}
-          <button type="button" class="btn btn-qualification" (click)="open(item.qualificationUrl)">View Qualification <i class="fas fa-award"></i></button>
+          <button type="button" class="btn btn-qualification" (click)="openModal(item.qualificationUrl)">View Qualification <i class="fas fa-award"></i></button>
       </p>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" (click)="close()">&times;</span>
+          <img src="assets/{{ qualificationUrl }}" alt="">
+        </div>
+      </div>
   </div>
 </div>

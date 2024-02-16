@@ -17,7 +17,7 @@ export class PortfolioComponent {
     {
       name: 'Recipe Book Frontend',
       description: 'Tool built in Angular to managedfgfgdfgdfgdfgd',
-      imageUrl: 'port2.jpg',
+      imageUrl: 'typescript.jpg',
       gitUrl: 'https://github.com/preshailen/moderator',
       ytUrl: 'https://youtu.be/q2l-ZrL8Ceg'
     }

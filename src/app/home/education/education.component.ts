@@ -1,6 +1,4 @@
-import { Component, Input, TemplateRef, inject } from '@angular/core';
-import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { QualificationComponent } from './qualification/qualification.component';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-education',
@@ -8,7 +6,7 @@ import { QualificationComponent } from './qualification/qualification.component'
   styleUrls: ['./education.component.css']
 })
 export class EducationComponent {
-  private modalService = inject(NgbModal);
+  public qualificationUrl: string = '';
   educationItems: EducationItem[] = [
     {
       name: 'Bsc IT',
@@ -16,7 +14,7 @@ export class EducationComponent {
       school: 'University of Johannesburg',
       start: '2015',
       end: '2020',
-      qualificationUrl: 'assets/uni.jpg'
+      qualificationUrl: 'uni.jpg'
     },
     {
       name: 'Typescript Course',
@@ -24,13 +22,17 @@ export class EducationComponent {
       school: 'Udemy',
       start: '2024',
       end: '2024',
-      qualificationUrl: 'assets/typescript.jpg'
+      qualificationUrl: 'typescript.jpg'
     }
   ]
-	open(qualificationUrl: string) {
-		const modalRef = this.modalService.open(QualificationComponent, { size: "xl", backdrop: 'static' });
-		modalRef.componentInstance.qualificationUrl = qualificationUrl;
-	}
+  openModal(qUrl: string) {
+    this.qualificationUrl = qUrl;
+    document.getElementById("myModal")!.style.display = 'block';
+  }
+  close() {
+    this.qualificationUrl = '';
+    document.getElementById("myModal")!.style.display = "none";
+  }
 }
 export class EducationItem {
   name!: string;
