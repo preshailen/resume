@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as data from '../../../assets/data/portfolio.json';
 
 @Component({
   selector: 'app-portfolio',
@@ -6,22 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./portfolio.component.css', '../../app.component.css']
 })
 export class PortfolioComponent {
-  portfolios: Portfolio[] = [
-    {
-      name: 'E-Moderator',
-      description: 'Tool built in Angular that allows teachers to electronically moderate tests',
-      imageUrl: 'emoderator.png',
-      gitUrl: 'https://github.com/preshailen/moderator',
-      ytUrl: 'https://youtu.be/q2l-ZrL8Ceg'
-    },
-    {
-      name: 'Recipe Book Frontend',
-      description: 'Tool built in Angular to managedfgfgdfgdfgdfgd',
-      imageUrl: 'typescript.jpg',
-      gitUrl: 'https://github.com/preshailen/moderator',
-      ytUrl: 'https://youtu.be/q2l-ZrL8Ceg'
-    }
-  ]
+  portfolios: Portfolio[] = (data as any).default;
 }
 export class Portfolio {
   name!: string;
@@ -29,5 +15,6 @@ export class Portfolio {
   imageUrl!: string;
   gitUrl: string | undefined;
   ytUrl: string | undefined;
+  hostedUrl: string | undefined;
 }
 

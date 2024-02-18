@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as data from '../../../assets/data/about.json';
 
 @Component({
   selector: 'app-about',
@@ -6,37 +7,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
-  educationItems: EducationItem[] = [
-    {
-      name: 'Primary School',
-      description: '',
-      school: 'Mitchford Primary School',
-      start: '2003',
-      end: '2004'
-    },
-    {
-      name: 'Primary School',
-      description: '',
-      school: 'School for S Primary School',
-      start: '2005',
-      end: '2005'
-    },
-    {
-      name: 'Primary School',
-      description: '',
-      school: 'Eastleigh Primary School',
-      start: '2006',
-      end: '2009'
-    },
-  ]
-  download() {
+  public skills: Skill[] = (data as any).default;
 
-  }
+  /*
+    span class + amount
+    html = 80;
+    css = 95;
+    js = 75;
+    react = 75;
+    node = 87
+    python = 70
+  */
 }
-export class EducationItem {
-  name!: string;
-  description!: string;
-  school!: string;
-  start!: string;
-  end!: string;
+
+export class Skill {
+  title!: string;
+  amount!: string;
+  span!: string;
 }

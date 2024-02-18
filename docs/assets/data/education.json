@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Bsc IT",
+    "description": "",
+    "school": "University of Johannesburg",
+    "start": "2015",
+    "end": "2020",
+    "qualificationUrl": "bscIT.jpg"
+  },
+  {
+    "name": "Typescript Course",
+    "description": "",
+    "school": "Udemy",
+    "start": "2024",
+    "end": "2024",
+    "qualificationUrl": "typescript.jpg"
+  }
+]

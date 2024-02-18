@@ -1,0 +1,18 @@
+[
+  {
+    "name": "E-Moderator",
+    "description": "Tool built in Angular that allows teachers to electronically moderate tests",
+    "imageUrl": "emoderator.png",
+    "gitUrl": "https://github.com/preshailen/moderator",
+    "ytUrl": "https://youtu.be/q2l-ZrL8Ceg",
+    "hostedUrl": null
+  },
+  {
+    "name": "Podcast Link Tree",
+    "description": "Page built in HTML/CSS that lists the links associated to my podcast",
+    "imageUrl": "podcast.png",
+    "gitUrl": "https://github.com/paicip-pod/html-site",
+    "ytUrl": null,
+    "hostedUrl": "https://paicip.com"
+  }
+]

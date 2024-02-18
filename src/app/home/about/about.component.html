@@ -3,13 +3,12 @@
 </div>
 
 
-
-<!--
 <div class="about-container">
   <div class="left-about">
-      <h4>Information About me</h4>
+      <h4>Biography:</h4>
       <p>
-          I am a driven
+          I am a driven, committed professional who takes immense pride
+          in my work. I have over 5 years of experience in
       </p>
   </div>
   <div class="right-about">
@@ -23,92 +22,17 @@
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="about-stats">
   <h4 class="stat-title">My Skills</h4>
   <div class="progress-bars">
-      <div class="progress-bar">
-          <p class="prog-title">html5</p>
-          <div class="progress-con">
-              <p class="prog-text">80%</p>
-              <div class="progress">
-                  <span class="html"></span>
-              </div>
+      <div class="progress-bar" *ngFor="let skill of skills">
+        <p class="prog-title">{{ skill.title }}</p>
+        <div class="progress-con">
+          <p class="prog-text">{{ skill.amount }}</p>
+          <div class="progress">
+            <span class="{{ skill.span }}"></span>
           </div>
+        </div>
       </div>
-      <div class="progress-bar">
-          <p class="prog-title">css3</p>
-          <div class="progress-con">
-              <p class="prog-text">95%</p>
-              <div class="progress">
-                  <span class="css"></span>
-              </div>
-          </div>
-      </div>
-      <div class="progress-bar">
-          <p class="prog-title">javascript</p>
-          <div class="progress-con">
-              <p class="prog-text">75%</p>
-              <div class="progress">
-                  <span class="js"></span>
-              </div>
-          </div>
-      </div>
-      <div class="progress-bar">
-          <p class="prog-title">ReactJS</p>
-          <div class="progress-con">
-              <p class="prog-text">75%</p>
-              <div class="progress">
-                  <span class="react"></span>
-              </div>
-          </div>
-      </div>
-      <div class="progress-bar">
-          <p class="prog-title">NodeJS</p>
-          <div class="progress-con">
-              <p class="prog-text">87%</p>
-              <div class="progress">
-                  <span class="node"></span>
-              </div>
-          </div>
-      </div>
-      <div class="progress-bar">
-          <p class="prog-title">Python</p>
-          <div class="progress-con">
-              <p class="prog-text">70%</p>
-              <div class="progress">
-                  <span class="python"></span>
-              </div>
-          </div>
-      </div>
-  </div>
-</div>-->
-<h4 class="stat-title">My Education Timeline</h4>
-<div class="timeline">
-
-  <div class="timeline-item" *ngFor="let item of educationItems">
-      <div class="tl-icon">
-          <i class="fas fa-graduation-cap"></i>
-      </div>
-      <p class="tl-duration">{{ item.start }} - {{ item.end }}</p>
-      <h5>{{ item.name }}<span> - {{ item.school }}</span></h5>
-      <p>
-          {{ item.description }}
-      </p>
   </div>
 </div>
