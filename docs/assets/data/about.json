@@ -2,7 +2,26 @@
   {
     "title": "Typescript",
     "amount": "80%",
-    "span": "css"
+    "span": "html"
+  },
+  {
+    "title": "C#",
+    "amount": "75%",
+    "span": "js"
+  },
+  {
+    "title": "HTML",
+    "amount": "87%",
+    "span": "node"
+  },
+  {
+    "title": "CSS",
+    "amount": "87%",
+    "span": "node"
+  },
+  {
+    "title": "Node JS",
+    "amount": "70%",
+    "span": "python"
   }
 ]
-
