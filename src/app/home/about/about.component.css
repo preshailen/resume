@@ -1,7 +1,5 @@
 /*About*/
-.about-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.about {
   padding-top: 3.5rem;
   padding-bottom: 5rem;
 }

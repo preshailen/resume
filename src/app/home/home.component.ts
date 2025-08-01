@@ -10,7 +10,10 @@ export class HomeComponent {
 
   }
   download() {
-    console.log('here')
+    let link = document.createElement("a");
+    link.download = "Preshailen_Ruthnam_CV.pdf";
+    link.href = "assets/Preshailen_Ruthnam_CV.pdf";
+    link.click();
   }
   change(name: string) {
     document.querySelector(".active-btn")!.classList.remove("active-btn");
