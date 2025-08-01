@@ -14,5 +14,13 @@
     "start": "2024",
     "end": "2024",
     "qualificationUrl": "typescript.jpg"
+  },
+  {
+    "name": "C# Course",
+    "description": "",
+    "school": "Udemy",
+    "start": "2025",
+    "end": "2025",
+    "qualificationUrl": "c_sharp.jpg"
   }
 ]
